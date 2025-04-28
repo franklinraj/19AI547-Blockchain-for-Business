@@ -40,24 +40,13 @@ contract PasswordlessAuth {
 }
 ```
 
-# Expected Output:
-Users can register without a password.
+# OUTPUT:
+# password authentication:
+![alt text](<Screenshot 2025-04-28 145228.png>)
 
-
-Users sign a challenge with their private key for authentication.
-
-
-The smart contract verifies signatures to confirm identity.
-
-
-
-# High-Level Overview:
-Eliminates password hacks & phishing attacks.
-
-
-Uses Ethereum's built-in cryptographic functions.
-
-
-Inspired by Web3 login solutions like MetaMask authentication.
+# password register:
+![alt text](<Screenshot 2025-04-28 145249.png>)
+![alt text](<Screenshot 2025-04-28 145303.png>)
 
 # RESULT: 
+PASSWORD HAS BEEN AUTHENTICATED SUCCESSFULLY.
