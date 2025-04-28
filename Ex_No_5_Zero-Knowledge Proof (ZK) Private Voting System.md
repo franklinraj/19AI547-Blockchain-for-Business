@@ -21,7 +21,11 @@ Once voting ends, the contract reveals the final tally without linking votes to 
 
 
 # Program:
+
 ```
+NAME:FRANKLIN RAJ G
+REG NO:212223230058
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -56,24 +60,15 @@ contract ZKVoting {
 }
 
 ```
-# Expected Output:
-Voters commit their votes privately.
+# OUTPUT:
 
+# voter register:
+![alt text](<Screenshot 2025-04-28 133020.png>)
 
-When revealed, the contract verifies correctness but keeps votes anonymous.
+# votes review:
+![alt text](<Screenshot 2025-04-28 133052.png>)
 
-
-Final result is publicly verifiable without exposing individual votes.
-
-
-
-# High-Level Overview:
-Uses ZKPs to ensure anonymous and fair elections.
-
-
-Prevents vote tampering while maintaining voter privacy.
-
-
-Mimics real-world ZK voting applications in governance and DAOs.
+# checking account:
+![alt text](<Screenshot 2025-04-28 133115.png>)
 
 # RESULT: 
