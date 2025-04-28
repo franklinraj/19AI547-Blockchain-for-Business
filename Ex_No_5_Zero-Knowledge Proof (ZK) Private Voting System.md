@@ -63,12 +63,18 @@ contract ZKVoting {
 # OUTPUT:
 
 # voter register:
-![alt text](<Screenshot 2025-04-28 133020.png>)
+![Screenshot 2025-04-28 133031](https://github.com/user-attachments/assets/3d0f5a53-7d25-4695-a727-b35789981ed0)
+
 
 # votes review:
-![alt text](<Screenshot 2025-04-28 133052.png>)
+![Screenshot 2025-04-28 133052](https://github.com/user-attachments/assets/7e2c9ded-8af6-42f5-ab00-a0983358f281)
+
 
 # checking account:
-![alt text](<Screenshot 2025-04-28 133115.png>)
+![Screenshot 2025-04-28 133115](https://github.com/user-attachments/assets/cd25ba53-083f-41be-8dd8-a9c7f1c63ca0)
+![Screenshot 2025-04-28 133151](https://github.com/user-attachments/assets/ed1640c6-457a-432b-9e17-41111923016b)
+
+
 
 # RESULT: 
+VOTING SYSTEM HAS BEEN DONE BY USING ZERO KNOWLEDGE PROOF
