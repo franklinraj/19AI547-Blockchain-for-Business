@@ -100,7 +100,8 @@ contract AIPoweredNegotiation {
 # Makeoffers:
 ![alt text](<Screenshot 2025-04-30 084836.png>)
 # Itemcount:
-![Screenshot 2025-04-30 084836](https://github.com/user-attachments/assets/3734175f-ded7-4ee8-bffe-0a258b4e4475)
+![Screenshot 2025-04-30 084909](https://github.com/user-attachments/assets/fe483924-d4de-40ea-964e-dcc3005253e9)
+
 
 
 
