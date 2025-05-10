@@ -1,6 +1,6 @@
 # Experiment 8: Post-Quantum Blockchain Wallet with Lattice-Based Cryptography
-### Name:FRANKLIN RAJ G
-### Reg No:212223230058
+## Name:FRANKLIN RAJ G
+## Reg No:212223230058
 # Aim:
 To create a quantum-resistant wallet using lattice-based cryptography instead of traditional ECDSA, ensuring that future quantum computers cannot break private keys.
 
