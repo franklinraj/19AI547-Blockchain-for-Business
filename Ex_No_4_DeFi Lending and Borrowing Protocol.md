@@ -74,31 +74,20 @@ contract DeFiLending {
 # Output :
 
 ### Borrow
-![alt text](<Screenshot 2025-04-28 141521.png>)
+![Screenshot 2025-04-28 141521](https://github.com/user-attachments/assets/cd283d00-7fe0-4e30-97ee-adae113afbfb)
+
 
 ### Liquidate
-![alt text](<Screenshot 2025-04-28 141544.png>)
+![Screenshot 2025-04-28 141544](https://github.com/user-attachments/assets/393c1e67-e56d-4d0c-8a5a-5d337de64aa0)
+
+
 
 ### ReduceCollateral
-![alt text](<Screenshot 2025-04-28 141605.png>)
-
-### Borrowed
-![alt text](<Screenshot 2025-04-28 141630.png>)
+![Screenshot 2025-04-28 141605](https://github.com/user-attachments/assets/4e619e2b-ade5-40ab-b4da-54678fc8cf35)
 
 ### Collateral
-![alt text](<Screenshot 2025-04-28 141655.png>)
+![Screenshot 2025-04-28 141655](https://github.com/user-attachments/assets/e96ce605-1538-46bf-97e8-54889398018e)
 
-### Deposits
-![alt text](<Screenshot 2025-04-28 141710.png>)
-
-### Interest rate
-![alt text](<Screenshot 2025-04-28 141726.png>)
-
-### Liquidation threshold call
-![alt text](<Screenshot 2025-04-28 141739.png>)
-
-### Owner
-![alt text](<Screenshot 2025-04-28 141751.png>)
 
 # RESULT : 
 
