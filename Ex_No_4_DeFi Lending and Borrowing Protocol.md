@@ -3,31 +3,28 @@
 To build a decentralized lending protocol where users can deposit assets to earn interest and borrow assets by providing collateral. This experiment introduces concepts like overcollateralization, liquidity pools, and interest accrual in DeFi.
 
 # Algorithm:
-Step 1: Setup Lending and Borrowing Mechanism
-Users deposit ETH into the contract as liquidity.
 
+Step 1: Users deposit ETH into the smart contract to earn interest over time.
 
-Depositors receive interest based on their deposits.
+Step 2: Users can borrow ETH by providing enough collateral (at least 150% of the borrowed amount).
 
+Step 3: The contract checks that collateral is sufficient before allowing the loan.
 
-Borrowers can borrow ETH but must provide collateral (e.g., 150% of the borrowed amount).
+Step 4: Interest is calculated dynamically based on how much ETH is borrowed compared to total deposits.
 
+Step 5: If a borrower’s collateral value drops below the safe level (liquidation threshold), they can be liquidated.
 
-Interest on borrowed funds is calculated dynamically based on utilization rate.
-
-
-Step 2: Implement Overcollateralization
-If a borrower’s collateral value drops below a certain liquidation threshold, their collateral is liquidated to repay the debt.
-
-
-Step 3: Allow Liquidation
-If collateral < liquidation threshold, liquidators can repay the borrower's debt and claim their collateral at a discount.
+Step 6: Liquidators can repay a borrower's debt and claim their collateral to maintain system stability.
 
 
 
-Program:
+# Program:
+#### Developed by: FRANKLIN RAJ G
+#### Register number: 212223230058
+#### Date: 28/04/2025
+
 ```
-//SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
 contract DeFiLending {
@@ -53,16 +50,11 @@ contract DeFiLending {
     }
 
     function borrow(uint256 amount) public payable {
-        require(msg.value >= (amount * liquidationThreshold) / 100, "Nota enough collateral");
+        require(msg.value >= (amount * liquidationThreshold) / 100, "Not enough collateral");
         borrowed[msg.sender] += amount;
         collateral[msg.sender] += msg.value;
         payable(msg.sender).transfer(amount);
         emit Borrowed(msg.sender, amount, msg.value);
-    }
-    function reduceCollateral(address user, uint256 amount) public {
-    require(msg.sender == owner, "Only owner can reduce");
-    require(collateral[user] >= amount, "Not enough collateral to reduce");
-    collateral[user] -= amount;
     }
 
     function liquidate(address borrower) public {
@@ -78,25 +70,36 @@ contract DeFiLending {
 }
 
 ```
-# Expected Output:
-Users can deposit ETH and earn interest.
 
+# Output :
 
-Users can borrow ETH by providing collateral.
+### Borrow
+![alt text](<Screenshot 2025-04-28 141521.png>)
 
+### Liquidate
+![alt text](<Screenshot 2025-04-28 141544.png>)
 
-If collateral < 150% of borrowed amount, liquidators can seize the collateral.
+### ReduceCollateral
+![alt text](<Screenshot 2025-04-28 141605.png>)
 
+### Borrowed
+![alt text](<Screenshot 2025-04-28 141630.png>)
 
+### Collateral
+![alt text](<Screenshot 2025-04-28 141655.png>)
 
-# High-Level Overview:
-Teaches key DeFi concepts: lending, borrowing, collateral, liquidation.
+### Deposits
+![alt text](<Screenshot 2025-04-28 141710.png>)
 
+### Interest rate
+![alt text](<Screenshot 2025-04-28 141726.png>)
 
-Introduces risk management: overcollateralization and liquidation.
+### Liquidation threshold call
+![alt text](<Screenshot 2025-04-28 141739.png>)
 
-
-Directly related to DeFi protocols like Aave and Compound.
+### Owner
+![alt text](<Screenshot 2025-04-28 141751.png>)
 
 # RESULT : 
 
+Thus, to build a decentralized lending protocol where users can deposit assets to earn interest and borrow assets by providing collateral. This experiment introduces concepts like overcollateralization, liquidity pools, and interest accrual in DeFi is executed successfully.
